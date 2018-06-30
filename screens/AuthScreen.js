@@ -1,19 +1,13 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import LoginScreen from './LoginScreen';
-import SecuredScreen from './SecuredScreen';
-import MainScreen from './MainScreen';
+import HomeScreen from './HomeScreen';
  
 class AuthScreen extends Component {
     render() {
         if (this.props.isLoggedIn == "LOGIN") {
-            console.log(this.props.isLoggedIn);
-            console.log("kejdzlakjelkzajekl");
-            return <MainScreen />;
+            return <HomeScreen />;
         } else {
-            console.log(this.props.isLoggedIn);
-            console.log(this.props.username);
-            console.log("dddd");
             return <LoginScreen />;
         }
     }

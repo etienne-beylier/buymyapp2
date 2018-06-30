@@ -3,7 +3,6 @@ import { Provider } from 'react-redux';
 import { createStackNavigator } from 'react-navigation';
 
 import store from './store';
-import MainScreen from './screens/MainScreen';
 import AuthScreen from './screens/AuthScreen';
 
 export default class App extends Component {

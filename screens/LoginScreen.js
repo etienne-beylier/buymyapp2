@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { Text, TextInput, View, Button, StyleSheet } from "react-native";
 import { login, signup } from "../actions/auth";
-import { FetchExample } from '../components/FetchApi';
 
 class LoginScreen extends Component {
   constructor(props) {
